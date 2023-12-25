@@ -1,0 +1,28 @@
+tasks:
+        - task: check_hostname
+          target_hostname: CLI-OUT
+
+        - task: check_ping
+          target_ip: 10.10.20.1 # FW
+
+        - task: check_ping
+          target_ip: 10.10.20.1 # CORE
+
+        - task: check_ping
+          target_ip: 10.10.10.1 # ISP
+
+        - task: check_ping
+          target_ip: 10.10.10.2 # FW
+          
+        - task: check_ping
+          target_ip: 192.168.100.1 # ISP
+
+        - task: check_ping
+          target_ip: 192.168.100.10 # CLI-ADM
+
+        - task: check_ping
+          target_ip: 192.168.200.1 # CLI-OUT
+
+        - task: check_ping
+          target_ip: 192.168.200.10 # ISP    
+

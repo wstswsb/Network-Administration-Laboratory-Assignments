@@ -1,0 +1,27 @@
+tasks:
+        - task: check_hostname
+          target_hostname: STR
+
+        - task: check_ping
+          target_ip: 2002:db:a::1   # CORE IP
+
+        - task: check_ping
+          target_ip: 2002:db:a::10  # SRV-L IP
+
+        - task: check_ping
+          target_ip: 2002:db:a::20  # SRV-R IP
+
+
+        - task: check_ping
+          target_ip: 2002:db:b::1   # STR IP
+
+        - task: check_ping
+          target_ip: 2002:db:b::10  # CORE IP
+
+
+        - task: check_ping
+          target_ip: 2002:db:c::1   # CORE IP
+
+        - task: check_ping
+          target_ip: 2002:db:c::10  # FW IP
+

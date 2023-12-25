@@ -1,0 +1,27 @@
+tasks:
+        - task: check_hostname
+          target_hostname: SRV-R
+
+        - task: check_ping
+          target_ip: fd01::1 # CORE
+
+        - task: check_ping
+          target_ip: fd01::2 # SRV-L
+
+        - task: check_ping
+          target_ip: fd01::3 # SRV-R
+
+
+        - task: check_ping
+          target_ip: fd02::1 # CORE
+
+        - task: check_ping
+          target_ip: fd02::2 # STR
+
+
+        - task: check_ping
+          target_ip: fd03::1 # CORE
+
+        - task: check_ping
+          target_ip: fd03::2 # FW
+
